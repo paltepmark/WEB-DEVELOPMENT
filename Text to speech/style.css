@@ -1,0 +1,64 @@
+/*background*/
+body {
+    background:url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2tlM285bDI1ODM0MHpmczk1cDZic3hmYjcwY3FheWZuM2l1YWd1ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jCLgu8gvPbWmIK15yZ/giphy.gif");
+    background-size:cover;
+    background-position:center;
+    padding-top: 100px;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+button{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    border-color: white;
+    border-width: 10px;
+}
+
+textarea{
+    background-color: black;
+    color:white;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+
+/* One Piece animated background */
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    background:url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2tlM285bDI1ODM0MHpmczk1cDZic3hmYjcwY3FheWZuM2l1YWd1ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jCLgu8gvPbWmIK15yZ/giphy.gif");
+    background-size:cover;
+    background-position:center;
+
+    opacity:0.25; /* para kita parin yung violet gradient mo */
+    z-index:-1;
+}
+
+h1 {
+    background-color: red;
+    font-size: 50px;
+    font-family: Bold;
+    text-shadow: 10px;
+    border: 10px solid black;
+}
+
+
+
+
+

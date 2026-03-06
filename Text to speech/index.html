@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Text To Speech</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>TEXT TO SPEAK</h1>
+
+<!-- dito mag tatype yung user -->
+<textarea id="text" rows="5" cols="40" placeholder="Type text here..."></textarea>
+<br><br>
+
+<!-- Button to start speaking -->
+<button onclick="speakText()">Speak</button>
+
+<script>
+
+// function na mag ran kapag pinindot yung button
+function speakText() {
+
+    // kunin yun text na nilagay ng user
+    let text = document.getElementById("text").value;
+
+    // gagawa ng speech object
+    let speech = new SpeechSynthesisUtterance(text);
+
+    // 3. Set language
+    speech.lang = "en-US","fil-PH","ja-JP","ko-KR";
+
+    // speed ng voice
+    speech.rate = 1;
+
+    // pitch ng voice
+    speech.pitch = 1;
+
+    //Browser speaks the text
+    window.speechSynthesis.speak(speech);
+}
+
+</script>
+<h1>DEVELOPER : PALTEP</h1>
+</body>
+</html>
